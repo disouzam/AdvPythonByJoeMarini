@@ -1,0 +1,4 @@
+- PEP8 - Python Style Guide: https://peps.python.org/pep-0008/
+- Tabs and spaces can't be mixed up
+- Other comments about length of lines to enable side-by-side visualization and better visual experience are also made
+- A list of DO's and DONT's is exhibited
