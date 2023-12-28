@@ -58,3 +58,31 @@ if not EMPTYSET:
 EMPTYRANGE = range(0)
 if not EMPTYRANGE:
     print("False from a empty range")
+
+# Custom objects
+
+
+class MyClassAsTrue:
+    """A blank class definition with no overload of __bool__ and __len__ methods"""
+
+
+instance1 = MyClassAsTrue()
+
+if instance1:
+    print("True from a default class - no overloading of bool and len methods")
+
+
+class MyClassAsFalse:
+    """__bool__ and __len__ methods were overriden"""
+
+    def __bool__(self):
+        return False
+
+    def __len__(self):
+        return 0
+
+
+instance2 = MyClassAsFalse()
+
+if not instance2:
+    print("False from a modified class")
